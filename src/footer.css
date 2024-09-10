@@ -1,0 +1,28 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* body
+{
+   background-image: url("https://images.pexels.com/photos/1612353/pexels-photo-1612353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+   
+   background-size: cover;
+   mask-repeat: no-repeat;
+} */
+
+footer
+{
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(165, 42, 42);
+    display: flex;
+    justify-content: center;
+    width: 97.4%;
+    margin-left: 0px;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}

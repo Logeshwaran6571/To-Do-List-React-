@@ -1,13 +1,197 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* General Styles */
+header {
+  background: radial-gradient(rgb(8, 0, 255), rgb(8, 0, 255));
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ul {
+  padding-top: 12%;
 }
+
+
+
+.item {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+  background-color: rgb(229, 229, 229);
+  margin-top: 5px;
+  overflow: hidden;
+  width: 40%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  width: 25px;
+  height: 25px;
+}
+
+.trash {
+  color: rgba(255, 0, 0, 0.545);
+  outline: none;
+  margin-left: 20px;
+}
+
+.trash:hover {
+  color: rgb(255, 0, 0);
+  width: 30px;
+}
+
+.Empty {
+  display: flex;
+  margin-top: 12%;
+  justify-content: center;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(168, 162, 162);
+}
+
+.addform {
+  margin-top: 50px;
+  margin-bottom: -90px;
+  text-align: center;
+  font-size: 40px;
+  font-family: cursive;
+}
+
+#addItem:focus {
+  outline-color: rgb(5, 255, 55);
+  box-shadow: 0 0 10px rgb(5, 255, 55);
+}
+
+#addItem {
+  width: 30%;
+  margin-left: 10px;
+  margin-right: 20px;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: text;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 550;
+}
+
+.FaPlus {
+  width: 60px;
+  height: 43px;
+  padding-top: 5px;
+  margin-left: -10px;
+  border-radius: 8px;
+  background-color: rgb(219, 255, 17);
+  color: rgb(0, 0, 0);
+}
+
+.FaPlus:hover {
+  color: black;
+  background-color: rgb(0, 255, 17);
+  box-shadow: 5px 5px 3px black;
+  cursor: grab;
+}
+
+.searchform {
+  text-align: center;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  margin-top: 10px;
+   
+  
+}
+
+#search {
+  width: 50%;
+  border-radius: 20px;
+  margin-left: 5px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    font-size: 24px;
+    padding: 15px;
+  }
+
+  .datas {
+    margin-top: 100px;
+    
+  }
+
+  .item {
+    width: 90%; /* Full width on smaller screens */
+    font-size: 20px;
+    margin-left: 5%;
+  }
+
+  #addItem {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .FaPlus {
+    width: 50px;
+    height: 40px;
+    margin-left: 10px;
+  }
+
+  .searchform {
+    top: 20%;
+    left: 5%;
+    width: 90%;
+    position: absolute;
+    top: 35%;
+    left:-1%;
+  }
+
+  #search {
+    width: 40%;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .datas {
+    margin-top: 50px;
+  }
+
+  .item {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  #addItem {
+    width: 90%;
+  }
+
+  .FaPlus {
+    width: 45px;
+    height: 35px;
+  }
+
+  .searchform {
+    top: 15%;
+    left: 5%;
+    width: 90%;
+  }
+
+  #search {
+    width: 85%;
+  }
+}
+
+ 
